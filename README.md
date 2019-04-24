@@ -11,6 +11,8 @@ If you prefer, you can edit the file name recognized by the code *in line 87* of
 
 # RESULTS
 
+Whenever a Address with balance is found, you will hear 3 beeps of the bell sound, it is an alert that you can deactivate if you wish, just change the value True to "False" in line 21 of the source code.
+
 Tool working: https://imgur.com/a/Vu7Ia4v
 
 Tool results output: https://imgur.com/a/qbh2asC
