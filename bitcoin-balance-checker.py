@@ -3,7 +3,6 @@
 
 #Developed by: ~geniusprodigy
 #I have implemented and modified so that it is possible to automatically check list-based Bitcoin Addresses to work with massive volumes of scans.
-
 import sys
 import re
 from time import sleep
@@ -13,7 +12,6 @@ try:    # if is python3
 except: # if is python2
     from urllib2 import urlopen
 
-arq1 = open('addresses-with-balance-yay.txt', 'w')
 
 def check_balance(address):
 
@@ -80,6 +78,7 @@ def check_balance(address):
             arq1.write("Bitcoin Address: %s" % check_address)
             arq1.write("\t Balance: %.8f Bitcoin" % (btc_tokens/SATOSHIS_PER_BTC))
             arq1.write("\n")
+            arq1.close()
             if (WARN_WAIT_TIME > 0):
                 sleep(WARN_WAIT_TIME)
 
@@ -87,6 +86,7 @@ def check_balance(address):
 with open("list-addresses.txt") as file:
     for line in file:
 
+    	arq1 = open('addresses-with-balance-yay.txt', 'a')
         address = str.strip(line)
         print ("__________________________________________________\n")
         
@@ -97,3 +97,6 @@ print "Developed by: ~geniusprodigy"
 print "My contact on reddit: reddit.com/u/genius360\n"
 print "If this saved you time or helped, donations please for BTC Address:"
 print "1FrRd4iZRMU8i2Pbffzkac5u4KwUptmc7S"
+arq1 = open('addresses-with-balance-yay.txt', 'a')
+arq1.write("\nDeveloped by: ~geniusprodigy. If this saved you time or helped, donations please for BTC Address: 1FrRd4iZRMU8i2Pbffzkac5u4KwUptmc7S")
+arq1.close()
