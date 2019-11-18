@@ -29,4 +29,4 @@ It is sorted by Address and the balance just ahead already formed in the default
 If you need any support, just contact me. Reddit: https://www.reddit.com/user/genius360 Email: geniusprodigy@protonmail.com
 
 If this helped you, please leave a tip. BTC Address: 1FrRd4iZRMU8i2Pbffzkac5u4KwUptmc7S
-Use at your own risk.
+Use at your own risk. I am not responsible for any use.
