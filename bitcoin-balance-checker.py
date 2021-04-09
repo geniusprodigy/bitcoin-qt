@@ -86,17 +86,17 @@ def check_balance(address):
 with open("list-addresses.txt") as file:
     for line in file:
 
-    	arq1 = open('addresses-with-balance-yay.txt', 'a')
+        arq1 = open('addresses-with-balance-yay.txt', 'a')
         address = str.strip(line)
-        print ("__________________________________________________\n")
+        print ("__________________________________________________\n");
         
         check_balance(address)
 
-print "__________________________________________________\n"
-print "Developed by: ~geniusprodigy"
-print "My contact on reddit: reddit.com/u/genius360\n"
-print "If this saved you time or helped, donations please for BTC Address:"
-print "1FrRd4iZRMU8i2Pbffzkac5u4KwUptmc7S"
+print ( "__________________________________________________\n" );
+print ( "Developed by: ~geniusprodigy" );
+print ( "My contact on reddit: reddit.com/u/genius360\n" );
+print ( "If this saved you time or helped, donations please for BTC Address:" );
+print ( "1FrRd4iZRMU8i2Pbffzkac5u4KwUptmc7S" );
 arq1 = open('addresses-with-balance-yay.txt', 'a')
 arq1.write("\nDeveloped by: ~geniusprodigy. If this saved you time or helped, donations please for BTC Address: 1FrRd4iZRMU8i2Pbffzkac5u4KwUptmc7S")
 arq1.close()
